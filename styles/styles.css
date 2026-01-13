@@ -16,6 +16,18 @@ nav a {
     text-decoration: none;
 }
 
+h1 {
+    color: olive;
+}
+
+main img {
+    width: 200px;
+    height: auto;
+    border: 3px solid #ccc;
+    padding: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 aside {
     width: 300px;
     margin: 20px auto;
