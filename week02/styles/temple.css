@@ -41,10 +41,10 @@ img {
 
 section {
     margin: 20px 0;
-    border: 1px solid rgb(0, 0, 0 / 100%);
+    border: 1px solid rgb(0, 0, 0 / 10%);
     padding: 10px;
     background-color: #5b5c5ef1;
-    font-size: 9rem;
+    font-size: .9rem;
 }
 
 section p {
