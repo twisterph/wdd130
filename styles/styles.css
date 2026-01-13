@@ -4,6 +4,18 @@ main {
 
 }
 
+nav {
+    background-color: #333;
+    padding: 15px 20px;
+}
+
+nav a {
+    color: teal;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
 aside {
     width: 300px;
     margin: 20px auto;
