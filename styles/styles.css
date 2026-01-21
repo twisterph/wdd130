@@ -103,7 +103,7 @@ aside {
     text-align: var(--align-center);
 }
 
-aside h2 {
+aside h3 {
     position: absolute;
     top: 25px;
     left: 120px;
