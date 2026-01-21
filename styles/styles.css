@@ -60,9 +60,10 @@ aside img {
 }
 
 aside h2 {
-    position: relative;
-    top: 67px;
-    left: 150px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #000;
 }
 
 main img {
@@ -87,7 +88,7 @@ footer {
 
 .box {
     margin: 1rem;
-    border: 1px solid rgb(0, 0, 0, .1);
+    border: 2px solid rgb(0, 0, 0, .2);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
