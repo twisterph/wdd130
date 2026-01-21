@@ -90,8 +90,11 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 47px;
-    left: 150px;
+    top: 5%;
+    left: 25%;
+    color: #000;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .indent {
