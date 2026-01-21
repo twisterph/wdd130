@@ -86,8 +86,12 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 47px;
-    left: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .indent {
