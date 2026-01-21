@@ -41,17 +41,6 @@ main img {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-aside {
-    width: 300px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    padding: 15px;
-    text-align: center;
-    background-color: #6b9be3;
-    color: #333;
-    position: relative;
-}
-
 aside img {
     width: 200px;
     height: auto;
