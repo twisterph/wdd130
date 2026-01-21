@@ -90,7 +90,7 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 50%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000;
