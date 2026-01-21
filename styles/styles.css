@@ -92,7 +92,7 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: var(--align-center);
+    text-align: center;
 
 }
 
@@ -100,8 +100,9 @@ aside h2 {
     position: absolute;
     top: 15px;
     left: 20px;
-    color: var(--text-color);
-    text-align: top center;
+    color: #000;
+    text-align: center;
+    text-align: justify;
 
 }
 
