@@ -2,7 +2,6 @@
 
 :root {
     --primary-color: #0b3c5d;
-    --secondary-color: #1c7c54;
     --accent-color: #f4d35e;
     --light-color: #f8f9fa;
     --dark-color: #212529;
@@ -27,8 +26,10 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
+    padding: 0 16px;
+    width: 100%;
 }
 
 h1,
@@ -53,6 +54,15 @@ article {
     position: relative;
 }
 
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    max-width: 300px;
+}
+
 .hero img {
     display: block;
     width: 100%;
@@ -63,12 +73,12 @@ article {
 h1 {
     position: absolute;
     top: 20px;
-    width: 100;
+    width: 100px;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent-color);
-    color: #fff;
+    color: #000;
 }
 
 .hero article img {
