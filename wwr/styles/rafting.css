@@ -85,3 +85,9 @@ article {
     float: right;
     width: 125px;
 }
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    margin: 0 5px;
+}
