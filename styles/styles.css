@@ -14,32 +14,73 @@
     --img-shadow: gray;
 }
 
-header {
-    margin: 1rem 0;
+header,
+footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #2a4d69;
+    background-color: steelblue;
     padding: var(--padding-small);
 }
 
 nav a {
-    color: #ffffff;
+    color: #fff;
     display: block;
-    font-weight: bold;
-    padding: var(--padding-large);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 main {
-    margin-top: 1.5rem;
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
+
+}
+
+aside {
+    margin: 20rem;
+    text-align: center;
+    position: relative;
+    width: 20rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+aside h2 {
+    margin-top: 30px;
+    margin-bottom: 0rem;
+    position: absolute;
+    top: 15px;
+    text-align: justify;
+    left: 125;
+}
+
+aside img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    font-size: 0.9rem;
 }
 
 body {
@@ -54,6 +95,8 @@ body {
 h1 {
     margin-bottom: 1rem;
     color: #2a4d69;
+    border-bottom: 2px solid #2a4d69;
+    padding-bottom: 0.5rem;
 }
 
 main img {
@@ -65,7 +108,7 @@ main img {
     box-shadow: 0 0 30px var(--img-shadow);
 }
 
-/* Cajas reutilizables */
+/* selectors  */
 .box {
     margin: 1rem 0;
     border: 1px solid #999;
@@ -84,46 +127,4 @@ ul.box li {
 
 ul.box a {
     color: #2a4d69;
-}
-
-aside {
-    margin: 2rem 0;
-    text-align: center;
-    position: relative;
-    width: 20rem;
-}
-
-h2 {
-    margin-top: 30px;
-    color: rgb rgb(60, 97, 170);
-}
-
-.photo-text {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-aside h2 {
-    margin-bottom: 0rem;
-    position: absolute;
-    top: 15px;
-    text-align: justify;
-    left: 125;
-}
-
-aside img {
-    width: 100%;
-    margin-bottom: 0.5rem;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin: 2rem 0 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid #ccc;
-    font-size: 0.9rem;
 }
