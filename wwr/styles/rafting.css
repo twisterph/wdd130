@@ -142,7 +142,7 @@ article {
 
 .hero article p {
     line-height: 1.6;
-    color: var(--dark-color);
+    color: var(--accent2-color);
 }
 
 .history {
