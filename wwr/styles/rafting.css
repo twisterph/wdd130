@@ -1,4 +1,4 @@
-/* FEB 4 */
+/* Feb4 */
 
 :root {
     --primary-color: #3389c3;
@@ -268,18 +268,34 @@ article {
     border-radius: 8px;
 }
 
+/* Footer */
 footer {
+    width: 840px;
+    margin: 0 auto;
     background-color: var(--primary-color);
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 10px;
     color: var(--header-text-color);
 }
 
 footer p {
     margin: 0;
+}
+
+footer .socialmedia ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+footer .socialmedia a {
+    display: block;
 }
 
 @media (max-width: 700px) {
