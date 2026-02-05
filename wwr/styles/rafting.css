@@ -42,6 +42,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: var(--primary-color);
+    color: var(--header-text-color);
     gap: 20px;
 }
 
@@ -49,55 +50,27 @@ header img {
     max-height: 60px;
 }
 
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
+    justify-content: flex-end;
     gap: 20px;
 }
 
-header nav ul li a {
+header nav a {
+    color: var(--header-text-color);
     text-decoration: none;
-    color: var(--header-text-color);
     font-weight: bold;
-    transition: color 0.3s;
 }
 
-header nav ul li a:hover {
+header nav a:hover {
     color: var(--accent-color);
-}
-
-.socialmedia img {
-    height: 24px;
-    width: 24px;
-    display: block;
-}
-
-footer {
-    width: 840px;
-    margin: 0 auto;
-    background-color: var(--primary-color);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    color: var(--header-text-color);
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer .socialmedia {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer .socialmedia a img {
-    width: 24px;
-    height: 24px;
 }
 
 nav,
@@ -108,11 +81,15 @@ article {
     padding: 8px;
 }
 
-input,
-textarea,
-button {
-    font-family: var(--body-font);
-    font-size: 1rem;
+.socialmedia a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.socialmedia img {
+    height: 24px;
+    width: 24px;
+    display: block;
 }
 
 .hero {
@@ -120,9 +97,7 @@ button {
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
     border-radius: 8px;
 }
 
@@ -135,7 +110,6 @@ button {
     background-color: var(--hero-overlay-color);
     color: #fff;
     font-size: 2.5rem;
-    margin: 0;
 }
 
 .hero article {
@@ -143,8 +117,6 @@ button {
     top: 120px;
     left: 20px;
     width: calc(100% - 40px);
-    max-width: 840px;
-    overflow: hidden;
     background-color: rgba(255, 255, 255, 0.85);
     padding: 10px;
     border-radius: 8px;
@@ -159,27 +131,22 @@ button {
 
 .hero article p {
     line-height: 1.6;
-    color: var(--accent2-color);
 }
 
 .history {
     background-color: var(--accent1-color);
     padding: 30px 20px;
     border-radius: 8px;
-    max-width: 840px;
     margin: 40px auto;
 }
 
 .history h2 {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 2rem;
 }
 
 .history-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
     flex-wrap: wrap;
 }
@@ -187,14 +154,10 @@ button {
 .history-text,
 .history-text-right {
     flex: 1 1 250px;
-    min-width: 250px;
-    line-height: 1.5;
-    color: var(--dark-color);
 }
 
 .history-image {
     flex: 0 0 250px;
-    text-align: center;
 }
 
 .history-image img {
@@ -203,50 +166,31 @@ button {
 }
 
 .adventure {
-    max-width: 840px;
     margin: 40px auto;
-    padding: 20px;
     text-align: center;
-}
-
-.adventure h2 {
-    margin-bottom: 20px;
-    font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 .adventure-gallery {
     display: flex;
-    justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
 }
 
 .adventure-gallery figure {
     flex: 1 1 150px;
-    margin: 0;
 }
 
 .adventure-gallery img {
     width: 100%;
-    height: auto;
     border-radius: 8px;
-    display: block;
 }
 
-.adventure-gallery figcaption {
-    margin-top: 8px;
-    font-size: 0.9rem;
-    color: var(--dark-color);
-    font-weight: 600;
-}
-
-.page-contact .contact-hero {
+.contact-hero {
     text-align: center;
     margin: 40px auto;
 }
 
-.page-contact .contact-container {
+.contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -254,33 +198,45 @@ button {
     align-items: start;
 }
 
-.page-contact .contact-form {
+.contact-info {
+    order: 1;
     background-color: var(--accent1-color);
     padding: 20px;
     border-radius: 8px;
 }
 
-.page-contact .contact-form label {
+.contact-form {
+    order: 2;
+    background-color: var(--accent1-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form label {
     display: block;
     margin-top: 15px;
     font-weight: bold;
 }
 
-.page-contact .contact-form input,
-.page-contact .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
 }
 
-.page-contact .contact-form fieldset {
+.contact-form fieldset {
     margin-top: 15px;
     padding: 10px;
     border: none;
 }
 
-.page-contact .contact-form fieldset label,
-.page-contact .contact-form .checkbox {
+.contact-form legend {
+    font-weight: bold;
+}
+
+.contact-form fieldset label,
+.contact-form .checkbox {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -288,12 +244,16 @@ button {
     margin-top: 8px;
 }
 
-.page-contact .contact-form input[type="radio"],
-.page-contact .contact-form input[type="checkbox"] {
+.contact-form .checkbox {
+    margin-top: 15px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
     margin: 0;
 }
 
-.page-contact .submit-btn {
+.submit-btn {
     margin-top: 20px;
     padding: 10px;
     width: 100%;
@@ -304,79 +264,96 @@ button {
     cursor: pointer;
 }
 
-.page-contact .submit-btn:hover {
+.submit-btn:hover {
     background-color: #2a6f9e;
 }
 
-.page-contact .contact-info {
-    background-color: var(--accent1-color);
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.page-contact .contact-info iframe {
+.contact-info iframe {
     width: 100%;
-    height: 280px;
-    border: 0;
+    height: 250px;
+    border: none;
     margin-top: 15px;
-    border-radius: 8px;
 }
 
-.page-contact .employees {
+.employees {
     margin: 40px auto;
     text-align: center;
 }
 
-.page-contact .employees h2 {
+.employees h2 {
     margin-bottom: 20px;
 }
 
-.page-contact .employees figure {
+.employees figure {
     display: inline-block;
     width: 30%;
     margin: 0 1%;
 }
 
-.page-contact .employees img {
+.employees img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.page-contact .employees figcaption {
+.employees figcaption {
     margin-top: 8px;
     font-weight: 600;
+}
+
+footer {
+    width: 840px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--header-text-color);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .socialmedia ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+footer .socialmedia a {
+    display: block;
 }
 
 @media (max-width: 700px) {
 
     .history-container {
         flex-direction: column;
-        align-items: center;
     }
 
     .hero article {
-        position: relative;
-        top: auto;
-        left: auto;
-        width: 100%;
-        float: none;
-        margin: 20px 0 40px 0;
+        position: static;
         background-color: transparent;
         padding: 0;
+        margin-bottom: 40px;
     }
 
-    .page-contact .contact-container {
+    .contact-container {
         grid-template-columns: 1fr;
     }
 
-    .page-contact .contact-info,
-    .page-contact .contact-form {
+    .contact-info,
+    .contact-form {
         order: unset;
     }
 
-    .page-contact .employees figure {
+    .employees figure {
         width: 100%;
         margin-bottom: 20px;
     }
