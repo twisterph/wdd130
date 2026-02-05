@@ -37,44 +37,49 @@
                 <input type="email" id="email" name="email" required>
                 <fieldset>
                     <legend>Message Purpose</legend>
-                    <label>
-                        <input type="radio" name="purpose" value="general" required>
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="general"
+                          required>
                         General Inquiry
                     </label>
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose"
+                          value="reservation">
                         Reservation Question
                     </label>
-                    <label>
-                        <input type="radio" name="purpose" value="website">
+                    <label for="purpose-website">
+                        <input type="radio" id="purpose-website" name="purpose" value="website">
                         Website Suggestion
                     </label>
                 </fieldset>
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-                <label class="checkbox">
-                    <input type="checkbox" name="subscribe">
+
+                <label class="checkbox" for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
-                <button type="submit" class="submit-btn">
-                    Send Your Message
-                </button>
+
+                <button type="submit" class="submit-btn">Send Your Message</button>
             </form>
+
             <div class="contact-info">
                 <h2>Company Information</h2>
                 <p><strong>White Water Rafting Company</strong></p>
                 <p>
-                    123 Main River Street<br>
-                    Kolob, California
+                    Supai, AZ<br>
+                    Havasu rapids 86435, Arizona
                 </p>
-                <p><strong>Phone:</strong> +1 (928) 851-5518</p>
+                <p><strong>Phone:</strong> +1 (928) 855-8185</p>
                 <p><strong>Email:</strong> info@whitewater.com</p>
+
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1664898.7097372585!2d-114.67770307914734!3d35.41131566063006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shavasupai%20rapids!5e0!3m2!1sen!2sus!4v1770259730040!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1646396.8496227106!2d-113.8097831572723!3d36.29729715483333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shavasupai%20rapids!5e0!3m2!1sen!2sus!4v1770261579983!5m2!1sen!2sus"
                   width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
+
         <section class="employees">
             <h2>We Are Here to Serve You</h2>
             <figure>
@@ -91,30 +96,21 @@
             </figure>
         </section>
     </main>
+
     <footer role="contentinfo">
-        <p>&copy; 2026 Pablo C. Hinojosa. All rights reserved.</p>
+        <p>© 2026 🌎 Pablo C. Hinojosa 🌎 Lake Havasu, Arizona</p>
 
         <nav class="socialmedia" aria-label="Social media links">
             <ul>
-                <li>
-                    <a href="https://facebook.com">
-                        <img src="images/facebook.png" alt="Facebook icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com">
-                        <img src="images/linkedin.png" alt="LinkedIn icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com">
-                        <img src="images/instagram.png" alt="Instagram icon">
-                    </a>
-                </li>
+                <li><a href="https://facebook.com"><img src="images/facebook.png"
+                          alt="Facebook icon"></a></li>
+                <li><a href="https://linkedin.com"><img src="images/linkedin.png"
+                          alt="LinkedIn icon"></a></li>
+                <li><a href="https://instagram.com"><img src="images/instagram.png"
+                          alt="Instagram icon"></a></li>
             </ul>
         </nav>
     </footer>
-
 </body>
 
 </html>
