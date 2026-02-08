@@ -77,8 +77,8 @@ nav,
 p,
 section,
 article {
-    margin: 10px;
-    padding: 5px;
+    margin: 0px;
+    padding: initial;
 }
 
 .socialmedia a {
