@@ -237,7 +237,8 @@ article {
 
 .contact-form fieldset label,
 .contact-form .checkbox {
-    display: block font-weight: normal;
+    display: block;
+    font-weight: normal;
     margin-top: 8px;
     white-space: nowrap;
 }
