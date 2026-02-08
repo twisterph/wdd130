@@ -77,8 +77,8 @@ nav,
 p,
 section,
 article {
-    margin: 16px;
-    padding: 8px;
+    margin: 10px;
+    padding: 5px;
 }
 
 .socialmedia a {
@@ -221,7 +221,7 @@ article {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
 }
 
@@ -237,11 +237,9 @@ article {
 
 .contact-form fieldset label,
 .contact-form .checkbox {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: normal;
+    display: block font-weight: normal;
     margin-top: 8px;
+    white-space: nowrap;
 }
 
 .contact-form .checkbox {
@@ -250,7 +248,10 @@ article {
 
 .contact-form input[type="radio"],
 .contact-form input[type="checkbox"] {
+    width: auto;
     margin: 0;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .submit-btn {
