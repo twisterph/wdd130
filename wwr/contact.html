@@ -1,3 +1,5 @@
+<!--February 9th-->
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -11,7 +13,7 @@
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
-<body>
+<body class="contact-page">
     <header role="banner">
         <img src="images/logo.png" alt="White Water Rafting Company logo">
         <nav aria-label="Main navigation">
@@ -23,18 +25,27 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="contact-hero">
-            <h1>Contact Us</h1>
-            <p>We are happy to answer your questions and help plan your next adventure.</p>
+        <section class="contact-hero contact-hero-image">
+            <img src="images/hero.jpg"
+              alt="White water rafting guides assisting guests on the river">
+            <div class="contact-hero-content">
+                <h1>Contact Us</h1>
+                <p>We are happy to answer your questions and help plan your next adventure.</p>
+            </div>
         </section>
+
+
         <section class="contact-container">
             <form action="submit_form.php" method="post" class="contact-form">
                 <h2>Send Us a Message</h2>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
+
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
+
                 <fieldset>
                     <legend>Message Purpose</legend>
                     <label for="purpose-general">
@@ -52,6 +63,7 @@
                         Website Suggestion
                     </label>
                 </fieldset>
+
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
@@ -75,11 +87,10 @@
 
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1646396.8496227106!2d-113.8097831572723!3d36.29729715483333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shavasupai%20rapids!5e0!3m2!1sen!2sus!4v1770261579983!5m2!1sen!2sus"
-                  width="600" height="450" allowfullscreen="" loading="lazy"
+                  allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-
         <section class="employees">
             <h2>We Are Here to Serve You</h2>
             <figure>

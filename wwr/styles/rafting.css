@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #3389c3;
+    --primary-color: #1f5d8a;
     --accent-color: #f4d35e;
     --accent1-color: #f8f9fa;
     --accent2-color: #212529;
@@ -7,7 +7,7 @@
     --dark-color: #212529;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
-    --header-text-color: #fff;
+    --header-text-color: #ffffff;
     --hero-overlay-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -26,7 +26,8 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -267,13 +268,14 @@ article {
 }
 
 .submit-btn:hover {
-    background-color: #2a6f9e;
+    background-color: #164061;
+
 }
 
 .contact-info iframe {
     width: 100%;
     height: 409px;
-    border: none;
+    border: black;
     margin-top: 15px;
 }
 
@@ -361,7 +363,7 @@ footer .socialmedia a {
     }
 }
 
-/*INDEX.html*/
+/* INDEX.html */
 body.index-page .hero {
     background-image: url('hero-image.jpg');
     background-size: cover;
@@ -481,4 +483,46 @@ body.index-page .grid-content h3 {
 
 body.index-page .grid-content p {
     font-size: 1rem;
+}
+
+body.contact-page .contact-hero-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 40px auto;
+}
+
+body.contact-page .contact-hero-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+body.contact-page .contact-hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+body.contact-page .contact-hero-content h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+body.contact-page .contact-hero-content p {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 700px) {
+    body.contact-page .contact-hero-image img {
+        height: 220px;
+    }
 }
