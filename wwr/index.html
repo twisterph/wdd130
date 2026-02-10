@@ -1,69 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WWR Rafting Adventures</title>
+    <title>Home | White Water Rafting Company</title>
+    <meta name="description"
+      content="Join White Water Rafting Company for thrilling adventures on the river.">
+    <meta name="author" content="Pablo C. Hinojosa">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body class="index-page">
-
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html">WWR Rafting</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header role="banner">
+        <img src="images/logo.png" alt="White Water Rafting Company logo">
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Experience the Thrill of White Water Rafting</h1>
-            <p>Unleash your adventurous side with our rafting trips</p>
-            <a href="trips.html" class="cta-button">Explore Our Trips</a>
-        </div>
-    </section>
-
-
-    <section class="newsletter">
-        <h2>Stay Updated with Our Latest Adventures!</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Enter your email">
-            <button type="submit">Subscribe</button>
-        </form>
-    </section>
-
-    <section class="grid-layout">
-        <div class="grid-item">
-            <img src="rafting-image1.jpg" alt="White Water Rafting">
-            <div class="grid-content">
-                <h3>Thrilling Rafting Expeditions</h3>
-                <p>Join us for adrenaline-pumping rafting expeditions through scenic landscapes. A
-                    thrilling experience for all levels.</p>
+    <main>
+        <section class="hero">
+            <img src="images/home-hero-grid.jpg" alt="White water rafting adventure on the river"
+              class="hero-image">
+            <div class="hero-content">
+                <h1>Experience the Thrill of the Rapids</h1>
+                <p>Join us for an unforgettable adventure on the river!</p>
+                <a href="trips.html" class="cta-button">View Our Trips</a>
             </div>
-        </div>
-        <div class="grid-item">
-            <img src="rafting-image2.jpg" alt="Rafting Gear">
-            <div class="grid-content">
-                <h3>Top-Notch Equipment</h3>
-                <p>We provide the best gear to ensure your safety and comfort while you enjoy the
-                    river's wildest rapids.</p>
+        </section>
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form action="submit_newsletter.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section class="grid-layout">
+            <div class="grid-item">
+                <img src="images/rafting-trip.jpg" alt="Rafting Adventure">
+                <div class="grid-content">
+                    <h3>Exciting White Water Rafting</h3>
+                    <p>Experience adrenaline-pumping rapids with our expert guides. Suitable for all
+                        skill levels.</p>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="grid-item">
+                <img src="images/guides2.jpg" alt="River Scenery">
+                <div class="grid-content">
+                    <h3>Beautiful River Scenery</h3>
+                    <p>Enjoy stunning landscapes along the river. Take photos or simply soak in the
+                        natural beauty.</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer role="contentinfo">
         <p>© 2026 🌎 Pablo C. Hinojosa 🌎 Lake Havasu, Arizona</p>
         <nav class="socialmedia" aria-label="Social media links">
