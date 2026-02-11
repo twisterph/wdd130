@@ -5,18 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trips | White Water Rafting Company</title>
-    <meta name="description" content="Take note of all the different Trips available for you.">
+    <meta name="description"
+      content="Explore our thrilling white water rafting trips. Choose from beginner to expert adventures.">
     <meta name="author" content="Pablo C. Hinojosa">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
-<body>
+<body class="trips-page">
+    <header role="banner">
+        <img src="images/logo.png" alt="White Water Rafting Company logo">
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html" aria-current="page">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-
-
+        <section class="hero">
+            <img src="images/trips-hero.jpg" alt="Rafting Trips" class="hero-image">
+            <div class="hero-content">
+                <h1>Discover Your Perfect Rafting Adventure</h1>
+                <p>From beginner-friendly rapids to expert-level challenges, we have a trip for
+                    everyone!</p>
+                <a href="contact.html" class="cta-button">Contact Us for Bookings</a>
+            </div>
+        </section>
+        <section class="trip-descriptions">
+            <h2>Our Featured Trips</h2>
+            <div class="trip-container">
+                <article class="trip">
+                    <img src="images/trip1.jpg" alt="Gentle Rapids">
+                    <div class="trip-info">
+                        <h3>Beginner Rapids</h3>
+                        <p>Perfect for families and first-timers. Experience fun and safe rapids
+                            with expert guides.</p>
+                    </div>
+                </article>
+                <article class="trip">
+                    <img src="images/trip2.jpg" alt="Intermediate Rapids">
+                    <div class="trip-info">
+                        <h3>Intermediate Rapids</h3>
+                        <p>Enjoy longer stretches of rapids and more challenging sections for
+                            adventurous spirits.</p>
+                    </div>
+                </article>
+                <article class="trip">
+                    <img src="images/trip3.jpg" alt="Expert Rapids">
+                    <div class="trip-info">
+                        <h3>Expert Rapids</h3>
+                        <p>For experienced rafters seeking thrill and adrenaline. Only for those
+                            ready to take on big water.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="trips-table-section">
+            <h2>Trip Schedule & Details</h2>
+            <table class="trips-table">
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                        <th>Booking</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beginner Rapids</td>
+                        <td>2 hours</td>
+                        <td>Easy</td>
+                        <td>$75</td>
+                        <td><a href="contact.html" class="cta-button">Book Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate Rapids</td>
+                        <td>4 hours</td>
+                        <td>Medium</td>
+                        <td>$120</td>
+                        <td><a href="contact.html" class="cta-button">Book Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>Expert Rapids</td>
+                        <td>6 hours</td>
+                        <td>Hard</td>
+                        <td>$180</td>
+                        <td><a href="contact.html" class="cta-button">Book Now</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
-
-
     <footer role="contentinfo">
         <p>© 2026 🌎 Pablo C. Hinojosa 🌎 Lake Havasu, Arizona</p>
         <nav class="socialmedia" aria-label="Social media links">
