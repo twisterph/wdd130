@@ -364,47 +364,64 @@
     position: relative;
     width: 100%;
     height: 60vh;
-    overflow: hidden;
     border-radius: 8px;
     margin: 40px auto;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
-}
-
-.about-page .hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    z-index: 0;
 }
 
 .about-page .hero-content {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    z-index: 1;
     background-color: var(--hero-overlay-color);
     color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    z-index: 1;
+    padding: 30px 20px;
     border-radius: 8px;
+    max-width: 90%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .about-page .hero-content h1 {
     font-family: var(--heading-font);
-    color: #ffffff;
-    margin-bottom: 10px;
     font-size: 3rem;
+    margin-bottom: 15px;
 }
 
 .about-page .hero-content p {
     font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.about-page .hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--hero-overlay-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.about-page .hero-text p {
+    flex: 1;
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.about-page .hero-text img {
+    flex: 0 0 250px;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .about-page .history {
@@ -460,33 +477,6 @@
     border-radius: 8px;
 }
 
-.about-page .employees {
-    margin: 40px auto;
-    text-align: center;
-}
-
-.about-page .employees h2 {
-    margin-bottom: 20px;
-}
-
-.about-page .employees figure {
-    display: inline-block;
-    width: 30%;
-    margin: 0 1%;
-}
-
-.about-page .employees img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.about-page .employees figcaption {
-    margin-top: 8px;
-    font-weight: 600;
-}
-
 .about-page footer {
     max-width: 840px;
     margin: 2rem auto 0;
@@ -523,12 +513,24 @@
     .about-page .hero-content p {
         font-size: 1.1rem;
     }
+
+    .about-page .hero-text p {
+        font-size: 1.1rem;
+    }
+
+    .about-page .hero-text img {
+        width: 200px;
+    }
 }
 
 @media (max-width: 700px) {
     .about-page .hero {
         height: auto;
         padding: 40px 10px;
+    }
+
+    .about-page .hero-content {
+        padding: 20px 10px;
     }
 
     .about-page .hero-content h1 {
@@ -539,17 +541,23 @@
         font-size: 1rem;
     }
 
+    .about-page .hero-text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-page .hero-text img {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto 0;
+    }
+
     .about-page .history-container {
         flex-direction: column;
     }
 
     .about-page .adventure-gallery {
         flex-direction: column;
-    }
-
-    .about-page .employees figure {
-        width: 100%;
-        margin-bottom: 20px;
     }
 }
 
