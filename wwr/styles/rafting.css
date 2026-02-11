@@ -1,3 +1,5 @@
+/*main CSS*/
+
 /* contact.html */
 .contact-page {
     --primary-color: #1f5d8a;
@@ -199,19 +201,17 @@
 }
 
 .contact-page footer {
-    width: 840px;
-    margin: 0 auto;
+    max-width: 840px;
+    margin: 2rem auto 0;
     background-color: var(--primary-color);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
     color: var(--header-text-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
 }
 
 .contact-page footer p {
-    margin: 0;
+    margin-bottom: 1rem;
 }
 
 .contact-page footer .socialmedia ul {
@@ -223,8 +223,9 @@
     margin: 0;
 }
 
-.contact-page footer .socialmedia a {
-    display: block;
+.contact-page footer .socialmedia img {
+    width: 24px;
+    height: 24px;
 }
 
 @media (max-width: 700px) {
@@ -440,19 +441,17 @@
 }
 
 .about-page footer {
-    width: 840px;
-    margin: 0 auto;
+    max-width: 840px;
+    margin: 2rem auto 0;
     background-color: var(--primary-color);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
     color: var(--header-text-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
 }
 
 .about-page footer p {
-    margin: 0;
+    margin-bottom: 1rem;
 }
 
 .about-page footer .socialmedia ul {
@@ -464,8 +463,9 @@
     margin: 0;
 }
 
-.about-page footer .socialmedia a {
-    display: block;
+.about-page footer .socialmedia img {
+    width: 24px;
+    height: 24px;
 }
 
 @media (max-width: 1024px) {
@@ -975,6 +975,16 @@
 .trips-page .trips-table td .cta-button {
     font-size: 1rem;
     padding: 0.5rem 1rem;
+}
+
+.trips-page footer {
+    max-width: 840px;
+    margin: 2rem auto 0;
+    background-color: var(--primary-color);
+    color: var(--header-text-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
 }
 
 .trips-page footer {
