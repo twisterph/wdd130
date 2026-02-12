@@ -1,3 +1,5 @@
+<!--Febrero 11 ultimo review-->
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | White Water Rafting Company</title>
     <meta name="description"
-      content="Join White Water Rafting Company for thrilling adventures on the river.">
+      content="Join White Water Rafting Company for thrilling white water rafting adventures, guided trips, and unforgettable river experiences.">
     <meta name="author" content="Pablo C. Hinojosa">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -29,33 +31,49 @@
               class="hero-image">
             <div class="hero-content">
                 <h1>Experience the Thrill of the Rapids</h1>
-                <p>Join us for an unforgettable adventure on the river!</p>
+                <p>Join us for an unforgettable adventure on the river with expert guides and
+                    world-class rafting routes.</p>
                 <a href="trips.html" class="cta-button">View Our Trips</a>
             </div>
         </section>
         <section class="newsletter">
             <h2>Subscribe to Our Newsletter</h2>
             <form action="submit_newsletter.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <button type="submit">Subscribe</button>
+                <div class="newsletter-field">
+                    <label for="newsletter-name">Name</label>
+                    <input type="text" id="newsletter-name" name="name" required>
+                </div>
+
+                <div class="newsletter-field">
+                    <label for="newsletter-email">Email</label>
+                    <input type="email" id="newsletter-email" name="email" required>
+                </div>
+
+                <button type="submit">Sign Up</button>
             </form>
         </section>
         <section class="grid-layout">
             <div class="grid-item">
-                <img src="images/rafting-trip.jpg" alt="Rafting Adventure">
+                <img src="images/rafting-trip.jpg" alt="Group enjoying a rafting adventure">
                 <div class="grid-content">
                     <h3>Exciting White Water Rafting</h3>
-                    <p>Experience adrenaline-pumping rapids with our expert guides. Suitable for all
-                        skill levels.</p>
+                    <p>
+                        Experience adrenaline-pumping rapids with our professional guides.
+                        Whether you're a beginner or an experienced rafter, we have the
+                        perfect adventure waiting for you.
+                    </p>
                 </div>
             </div>
+
             <div class="grid-item">
-                <img src="images/guides2.jpg" alt="River Scenery">
+                <img src="images/guides2.jpg" alt="Rafting guides preparing guests for a trip">
                 <div class="grid-content">
-                    <h3>Beautiful River Scenery</h3>
-                    <p>Enjoy stunning landscapes along the river. Take photos or simply soak in the
-                        natural beauty.</p>
+                    <h3>Professional Guides & Stunning Scenery</h3>
+                    <p>
+                        Our experienced guides ensure safety and fun while you enjoy breathtaking
+                        river landscapes. Relax, explore nature, and create unforgettable memories
+                        on every trip.
+                    </p>
                 </div>
             </div>
         </section>
@@ -64,12 +82,21 @@
         <p>© 2026 🌎 Pablo C. Hinojosa 🌎 Lake Havasu, Arizona</p>
         <nav class="socialmedia" aria-label="Social media links">
             <ul>
-                <li><a href="https://facebook.com"><img src="images/facebook.png"
-                          alt="Facebook icon"></a></li>
-                <li><a href="https://linkedin.com"><img src="images/linkedin.png"
-                          alt="LinkedIn icon"></a></li>
-                <li><a href="https://instagram.com"><img src="images/instagram.png"
-                          alt="Instagram icon"></a></li>
+                <li>
+                    <a href="https://facebook.com">
+                        <img src="images/facebook.png" alt="Facebook icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com">
+                        <img src="images/linkedin.png" alt="LinkedIn icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com">
+                        <img src="images/instagram.png" alt="Instagram icon">
+                    </a>
+                </li>
             </ul>
         </nav>
     </footer>
