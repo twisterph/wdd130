@@ -247,7 +247,8 @@ footer p {
 }
 
 .index-page .hero-image {
-    min-height: 100vh;
+    min-height: 60vh;
+    max-height: 650px;
 }
 
 .index-page .hero-content h1 {
