@@ -63,6 +63,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    text-align: center;
 }
 
 p {
@@ -190,7 +191,9 @@ nav a:hover {
 }
 
 .hero-content .cta-button {
-    margin-top: 6px;
+    width: auto;
+    max-width: 220px;
+    justify-self: center;
 }
 
 .index-page .newsletter {
